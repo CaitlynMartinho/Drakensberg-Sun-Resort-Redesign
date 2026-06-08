@@ -1,0 +1,183 @@
+.top-heading{
+    padding-top: 100px;
+}
+
+.timeshare-heading{
+    margin-top: 40px;
+}
+
+.accommodation-heading{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.rooms-section{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    
+}
+
+.room-container{
+    border: 1.5px solid var(--beige);
+    border-radius: 15px;
+    display: flex;
+    align-items: stretch;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.room-container .img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.room-container h4{
+    margin-bottom: 15px;
+}
+
+.text{
+    padding: 15px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.room-container .buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.room-container .buttons a{
+    color: var(--green);
+    
+}
+
+.room-container .buttons a:hover{
+    color: var(--hover-green);
+    transform: scale(1.1);
+}
+
+.room-container .buttons .green-btn:hover{
+    background-color: var(--hover-green);
+    transform: scale(1.1);
+}
+
+.room-container .body-text{
+    max-width: 80%;
+}
+
+/*BOOKING FORM PAGE*/
+.forms-container{
+    margin-top: 100px;
+    width: 70%;
+    background-color: var(--white);
+    border-radius: 15px;
+    border: 1.5px solid var(--beige);
+}
+
+.booking-content{
+    background-image: url("../images/booking\ form.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-footer{
+    margin-top: 0;
+}
+
+.forms-container .top-heading, .forms-container .sub-heading{
+    text-align: center;
+}
+
+.form-content{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    padding: 25px;
+
+}
+
+.forms-container .left{
+    justify-content: left;
+}
+
+.forms-container .right{
+    justify-content: right;
+    text-align: center;
+}
+
+.left .inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content input{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid var(--green);
+    margin-bottom: 15px;
+}
+
+.form-content h3{
+    margin-bottom: 10px;
+    color: var(--green);
+    font-size: 24px;
+}
+
+.booking-btn{
+    margin: 15px;
+    display: flex;
+    justify-self: center;
+}
+
+
+@media (max-width: 768px) {
+    .room-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room-container .img{
+        width: 100%;
+        height: 200px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .room-container .body-text{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .room-container .links {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .room-container .links p{
+        margin-bottom: 15px;
+    }
+
+    .forms-container{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .form-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../stylesheets/variables.css">
+    <link rel="stylesheet" href="../stylesheets/main.css"> 
+    <link rel="stylesheet" href="../stylesheets/accommodation.css">
+
+    <!--Font imports-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--NAVIGATION BAR-->
+    <nav class="nav-bar">
+        <a href="../index.html"><img src="../images/logo.png"></a>
+
+        <div class="mobile-menu">
+            <div class="burger-menu">&#9776;</div>
+            
+            <ul id="nav-links">
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/accommodation.html">Accommodation</a></li>
+                <li><a href="../html/activities.html">Activities and Sevices</a></li>
+                <li><a href="../html/contactus.html">Contact us</a></li>
+            </ul>   
+        </div>
+    </nav>
+    
+    <main class="booking-content">
+        <div class="forms-container">
+            <h1 class="black-heading top-heading">Booking Form</h1>
+            <h2 class="beige-heading sub-heading">Fill out the form below to book your stay</h2>
+
+            <div class="form-content">
+            <div class="left">
+                <h3>Guests</h3>
+                    <div class="inputs">
+                        <label for="adults">Adults</label>
+                        <input type="number" id="adults" value="1" min="1">
+
+                        <label for="children">Children</label>
+                        <input type="number" id="children" value="0" min="0">
+                    </div>
+                    
+            </div>
+
+            <div class="right">
+                <div class="date-group">
+                    <h3 class="section-heading">Arrival</h3>
+                    <label for="arrival-date">Arrival</label>
+                    <input type="date" id="arrival-date">
+                  </div>
+                  
+                  <div class="date-group">
+                    <h3 class="section-heading">Departure</h3>
+                    <label for="departure-date">Departure</label>
+                    <input type="date" id="departure-date">
+                  </div>
+            </div>   
+        </div>
+
+        <button class="beige-btn booking-btn">Submit</button>
+        </div>
+    </main>
+
+    <!--FOOTER SECTION-->
+    <footer class="booking-footer">
+        <div class="left">
+            <img src="../images/logo.png">
+            <div class="socials">
+                <a><img src="../images/icons/facebook.svg"></a>
+                <a><img src="../images/icons/x.svg"></a>
+                <a><img src="../images/icons/google.svg"></a>
+                <a><img src="../images/icons/instagram.svg"></a>
+                <a><img src="../images/icons/linked in.svg"></a>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./accommodation.html">Accommodation</a></li>
+                <li><a href="./activities.html">Activities and Sevices</a></li>
+                <li><a href="./contactus.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>

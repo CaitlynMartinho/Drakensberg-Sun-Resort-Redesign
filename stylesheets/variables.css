@@ -1,0 +1,19 @@
+/*This file is used to set up global variables to use throughout all our stylesheets*/
+:root {
+
+    /*COLOURS*/
+    --black: black;
+    --white: white;
+    --green: #00573F;
+    --hover-green: #00835F;
+    --beige: #BCA997;
+    --hover-beige: #e2c3a5;
+    --light-grey: #EDEDEB;
+    --dark-grey: #646464;
+    --text-black: #353535;
+
+    /*FONTS*/
+    --base-font: Merriweather Sans, sans-serif;
+    --base-font-size: 18px;
+
+}

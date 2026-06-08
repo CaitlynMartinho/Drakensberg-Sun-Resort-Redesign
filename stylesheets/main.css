@@ -1,0 +1,251 @@
+/*MAIN CSS file for styling on all pages */
+
+/*Removes margin from everything on website*/
+*{
+    margin: 0;
+    font-family: var(--base-font);
+}
+
+/*Smooth scrolling behaviour*/
+html {
+    scroll-behavior: smooth;
+  }
+
+/*Ensures no horizontal scroll bar appears*/
+body{
+    overflow-x: hidden;
+}
+
+/*Sets margin for the body to ensure enough white space on the sides*/
+.content{
+    margin: 0 7%;
+}
+/*NAVBAR*/
+/*Main navabr container*/
+.nav-bar{
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    font-family: var(--base-font); 
+    margin: 0;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*Company logo in navbar*/
+.nav-bar img{
+    height: 40px;
+}
+
+/*Burger menu icon that only displays on mobile devices*/
+.burger-menu{
+    font-size: 1.5em;
+    color: #ffffff;
+    display: none;
+}
+
+/*Nav list of page links styling*/
+#nav-links{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    
+}
+
+#nav-links a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* /*Adds hover effect to nav links*/
+#nav-links a:hover{
+    color: var(--hover-beige);
+}
+
+/*FOOTER SECTION*/
+/*Main footer container*/
+footer{
+    background-color: var(--green);
+    color: var(--white);
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+/*Company logo in footer*/
+footer .left img{
+    height: 60px;
+}
+
+/*Footer navigation links to other pages*/
+footer ul{
+    line-height: 2.5;
+    list-style: none;
+    text-align: right;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+/*Social media links in footer container*/
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 60%;
+}
+
+/*Social media icons in footer*/
+.socials img{
+    width: 30px;
+}
+
+/*All page styling*/
+.beige-btn{
+    background-color: var(--beige);
+    color: var(--white);
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.green-btn{
+    background-color: var(--green);
+    color: var(--white);
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+/*Body text used for */
+.body-text{
+    color: var(--black-text);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.black-heading{
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.beige-heading{
+    color: var(--Beige, #BCA997);
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+/*REPONSIVE DESIGN*/
+@media (max-width: 768px) {
+    .nav-bar img{
+        height: 25px;
+        object-fit: cover;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+    .content{
+        margin: 0 5%;
+    }
+
+    .nav-bar{
+        width: 100vw;
+        
+    }
+
+    #nav-links{
+        display: none;
+        flex-direction: column;
+        justify-content: right;
+        text-align: right;
+    }
+
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        gap: 15px;
+        
+    }
+
+    #nav-links.active{
+        display: flex;
+        
+        
+    }
+
+    .burger-menu{
+        display: flex;
+        justify-content: right;
+    }
+
+    .beige-btn{
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .black-heading{
+        font-size: 28px;
+    }
+
+    /*FOOTER SECTION*/
+    footer{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px;
+        gap: 20px;
+        
+        
+    }
+
+    footer .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    footer .left .logo{
+        width: 80%;
+    }
+
+    .socials img{
+        width: 25px;
+        margin: 15px;
+    }
+
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    footer ul{
+        text-align: center;
+        padding: 0;
+    }
+
+    
+}
+

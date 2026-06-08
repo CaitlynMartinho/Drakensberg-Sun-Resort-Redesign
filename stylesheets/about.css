@@ -1,0 +1,126 @@
+.about-heading{
+    padding-top: 100px;
+    font-size: 34px;
+}
+
+.principles-heading{
+    font-size: 30px;
+}
+
+.principles-list li{
+    line-height: 1.5;
+    
+}
+
+.principles-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.principles-list li::marker{
+    font-size: 0.6em;
+}
+
+.principles-container{
+    display: flex;
+    gap: 10%;
+}
+
+.principles-container img{
+    width: 30%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.sustainability-heading{
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.sustainability-content{
+    width: 90%;
+}
+
+.history-heading{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.history-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.history-box{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1.5px solid var(--beige);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.history-box h3{
+    font-size: 24px;
+}
+
+.awards-heading{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.awards-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.awards-container img{
+    width: 250px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .principles-container{
+        flex-direction: column;
+        
+    }
+
+    .principles-container ul{
+        padding: 15px;
+    }
+
+    .principles-container img{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .sustainability-content{
+        width: 100%;
+    }
+
+    .history-box{
+        width: 90%;
+        
+    }
+
+    .awards-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .awards-container img{
+        width: 90%;
+
+    }
+}

@@ -1,0 +1,23 @@
+<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="26" height="25" fill="#1E1E1E"/>
+<g id="Homepage" clip-path="url(#clip0_0_1)">
+<rect width="1280" height="3962" transform="translate(-111 -3884)" fill="white"/>
+<g id="Group 29">
+<g id="Group 18">
+<rect id="Rectangle 28" x="-111" y="-164" width="1280" height="242" fill="#00573F"/>
+</g>
+<g id="Frame 49">
+<g id="Frame 48">
+<g id="gg:facebook">
+<path id="Vector" d="M10.544 25H15.8345V14.4605H20.6012L21.125 9.22368H15.8345V6.57895C15.8345 6.22998 15.9739 5.8953 16.2219 5.64854C16.4699 5.40179 16.8063 5.26316 17.1571 5.26316H21.125V0H17.1571C15.4032 0 13.7211 0.693137 12.4809 1.92693C11.2407 3.16072 10.544 4.8341 10.544 6.57895V9.22368H7.89876L7.375 14.4605H10.544V25Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1280" height="3962" fill="white" transform="translate(-111 -3884)"/>
+</clipPath>
+</defs>
+</svg>

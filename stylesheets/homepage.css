@@ -1,0 +1,414 @@
+/*HERO SECTION*/
+.hero-section{
+    background-image: url(../images/hero\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+/*Adds a black overlay to image to ensure it is not to bright*/
+/* This is done by adding a pseudo element to the hero section */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+/*Main hero section heading*/
+.hero-section h1{
+    color: var(--white);
+    font-size: 80px;
+    text-wrap: wrap;
+    text-align: center;
+    z-index: 3;
+}
+
+/*Call to action styling*/
+.hero-section button{
+    font-size: 22px;
+    text-transform: uppercase;
+    z-index: 3;
+}
+
+/*Adds hover effect to call to action button in hero section*/
+.hero-section button:hover{
+    background-color: var(--hover-beige);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*WELCOME SECTION*/
+/*Makes width half of page to fit image next to text */
+.welcome-text{
+    width: 50%;
+}
+
+
+.welcome-container{
+    display: flex;
+    gap: 65px;
+    align-items: stretch;
+    margin-top: 100px;
+}
+
+/*Welcome image styling */
+.welcome-img{
+    display: flex;
+    align-items: stretch; /*Ensures height is the same as the text height */
+    justify-content: right;
+    width: 50%;
+    object-fit: cover;
+}
+
+.welcome-img img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*ESSENTIALS SECTION*/
+.essentials-container{
+    margin-top: 100px;
+}
+
+/*Styling for essentials description paragraph*/
+.essentials-container p{
+    max-width: 60%;
+}
+
+/*Animating icons carousel to scroll left*/
+.essentials-icons{
+    margin-top: 40px;
+    display: flex;
+    gap: 70px;
+    scroll-behavior: smooth;
+    animation: scroll-left 25s linear infinite; /*Left scrolling animation*/
+    width: max-content;
+}
+
+@keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /*Hover effect that pauses animation*/
+.essentials-icons:hover{    
+    animation-play-state: paused;
+    
+}
+/*Ensures that icons do not overflow the page*/
+.scroll-wrapper{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.icon-container{
+    border: 1.5px solid var(--light-grey);
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.05);
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+    
+}
+
+/*Change icon colour and shadow when hovering*/
+.icon-container:hover{
+    border: 1.5px solid var(--green, #00573F);
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container:hover h3{
+    color: var(--green);
+}
+
+.icon-container:hover svg{
+    color: var(--green);
+}
+
+.icon-container svg{
+    height: 80px;
+    width: 80px;
+    color: var(--dark-grey);
+}
+
+.icon-container h3{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--black-text);
+}
+
+/*ACCOMMODATION SECTION*/
+/*Adds margin to ensure ensure white space after previous section*/
+.accommodation-container{
+    margin-top: 100px;
+}
+
+/*Main box styling to contain bento boxes*/
+.accommodation-box{
+    border: 1.5px solid var(--beige);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.bento-box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+
+.top-boxes, .bottom-boxes{
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    width: 100%;
+    height: 330px;
+}
+
+.bottom-boxes{
+    max-height: 280px;
+}
+
+#description-paragraph{
+    line-height: 1.5;
+}
+
+.ameneties-box{
+    width: 40%;
+}
+
+.ameneties-box li{
+    line-height: 2;
+    font-size: 20px;
+}
+
+.ameneties-box li::marker{
+    font-size: 0.6em;
+}
+
+.img-box{
+    display: flex;
+    align-items: stretch;
+    width: 60%;
+    background-image: url(../images/rooms/executive\ rooms.jpg);
+    background-size: cover;
+    background-position: 0%;
+}
+
+.img-box img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.description-box{
+    width: 55%;
+    font-size: 20px;
+    
+}
+
+.features-box{
+    width: 50%;
+    height: 40%;
+    font-size: 20px;
+}
+
+.arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.arrows svg{
+    color: var(--green);
+    transform: scale(1.2);
+}
+
+.arrows svg:hover {
+    color: var(--hover-green);
+    transform: scale(1.3);
+}
+
+.accommodation-container .button-container{
+    text-align: center;
+}
+
+.accommodation-container button{
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.accommodation-container button:hover{
+    background-color: var(--hover-beige);
+    transform: scale(1.1);
+}
+
+/*FAQ SECTION*/
+.faq-container{
+    margin-top: 100px;
+    font-size: 18px;
+}
+
+.faq-description{
+    max-width: 70%;
+    margin-bottom: 30px;
+}
+
+.question-container p{
+    padding: 20px;
+}
+
+.question-container .question{
+    font-weight: 600;
+}
+
+.question-container:hover{
+    cursor: pointer;
+}
+
+.faq-notice{
+    margin-top: 30px;
+}
+
+.answer{
+    display: none;
+}
+
+.answer.active{
+    display: block;
+    padding-top: 0;
+}
+
+/*RESPONSIVE STYLES*/
+@media (max-width: 768px) {    
+    .hero-section h1{
+        font-size: 40px;
+    }
+    .hero-section{
+        background-size: cover;
+    }   
+
+    .hero-section button{
+        font-size: 18px;
+    }
+
+
+    .welcome-img{
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+    .welcome-img img{
+        width: 100%;
+    }
+
+    .welcome-text{
+        width: 100%;
+    }
+
+    .welcome-container{
+        justify-content: space-evenly;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+
+    .essentials-container p{
+        max-width: 100%;
+    }
+
+    .icon-container{
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon-container h3{
+        font-size: 14px;
+    }
+
+    .essentials-icons{
+        gap: 20px;
+        
+    }
+
+    .bento-box-container{
+        max-height: max-content;
+        flex-direction: column;
+        
+        gap: 20px; 
+    }
+
+    .top-boxes, .bottom-boxes{
+        flex-wrap: wrap;
+        height: auto;
+        
+    }
+
+    .bottom-boxes{
+        max-height: max-content;
+        
+    }
+
+    .ameneties-box{
+        width: 100%;
+        order: 3;
+    }
+
+    .img-box{
+        width: 100%;
+        height: 20vh;
+        order: 1;
+    }
+
+    .description-box{
+        width: 100%;
+        
+    }
+
+    .features-box{
+        width: 100%;
+        
+    }
+
+    .arrows{
+        margin-top: 20px;
+    }
+
+    /*FAQS SECTION*/
+    .faq-description{
+        max-width: 100%;
+    }
+
+
+}
+
