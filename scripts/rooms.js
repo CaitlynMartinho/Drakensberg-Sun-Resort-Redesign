@@ -86,7 +86,10 @@ function createUI(roomKey){
     //sets values as html elements
     document.getElementById("roomType").textContent = room.type;
     document.getElementById("subHeading").textContent = room.subHeading;
-    document.getElementById("roomImage").src = room.image;
+    document.getElementById("roomImg").style.backgroundImage = `url('${room.image}')`;
+    document.getElementById("roomImg").style.backgroundSize = "cover";
+    document.getElementById("roomImg").style.backgroundPosition = "center";
+    
     document.getElementById("descriptionParagraph").textContent = room.paragraph;
 
     document.getElementById("roomAmenities").innerHTML = room.amenities.map(amenity => `<li>${amenity}</li>`).join("");
